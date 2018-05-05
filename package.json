@@ -3,12 +3,14 @@
   "scripts": {
     "start": "parcel ./index.html",
     "copy-samples": "ncp ./samples ./dist",
-    "build": "parcel build ./index.html --out-dir ./build && ncp ./samples ./build"
+    "build": "parcel build ./index.html --out-dir ./build --public-url ./ && ncp ./samples ./build",
+    "predeploy": "rimraf docs && npm run build && ncp ./build ./docs"
   },
   "devDependencies": {
     "lite-server": "2.3.0",
     "ncp": "2.0.0",
     "node-sass": "4.9.0",
+    "rimraf": "2.6.2",
     "typescript": "2.8.3"
   },
   "dependencies": {

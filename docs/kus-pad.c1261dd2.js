@@ -3,4 +3,4 @@ parcelRequire=function(e,r,n){var t="function"==typeof parcelRequire&&parcelRequ
 },{}],6:[function(require,module,exports) {
 "use strict";var e=require("tone"),t=n(e);function n(e){if(e&&e.__esModule)return e;var t={};if(null!=e)for(var n in e)Object.prototype.hasOwnProperty.call(e,n)&&(t[n]=e[n]);return t.default=e,t}var r=new t.Sampler({C3:"/kick.mp3",D3:"/snare.mp3",E3:"/hh.mp3",F3:"/ohh.mp3",G3:"/ride.mp3",A3:"/cymbal.mp3"},{release:1}).toMaster();function a(){var e=document.querySelector(".pads");e.addEventListener("mousedown",function(e){return o(e.target)}),e.addEventListener("mouseup",function(e){return u(e.target)}),e.addEventListener("touchstart",function(e){e.preventDefault(),o(e.target)}),e.addEventListener("touchend",function(e){u(e.target)})}function o(e){var t=e.dataset.note;r.triggerAttackRelease(t,"8n"),e.classList.add("active")}function u(e){e.classList.remove("active")}document.addEventListener("DOMContentLoaded",a);
 },{"tone":11}]},{},[6])
-//# sourceMappingURL=/kus-pad.c1261dd2.map
+//# sourceMappingURL=kus-pad.c1261dd2.map
