@@ -1,0 +1,56 @@
+$back-light: #8d8d8d;
+$back-mid: #767676;
+$back-dark: #5a5a5a;
+$back-selected: #b5b2b1;
+$selected: #7fffff;
+$yellow: #ffc907;
+$black: #181e23;
+$orange: #f96301;
+$red: #ff3223;
+// html {
+//     touch-action: manipulation;
+// }
+body {
+    font-family: arial,sans-serif;
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome and Opera */
+    margin: 0;
+    background: $back-mid;
+}
+
+.pads {
+    overflow: hidden;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 10px;
+    height: 100%;
+    padding: 10px;
+    box-sizing: border-box
+}
+
+.pads__pad {
+    background: $back-selected;
+    color: $black;
+    border-radius: 5px;
+    padding: 20px;
+    border: 1px solid $black;
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+    text-transform: uppercase;
+    will-change: background;
+    transition: background-color 0.1s;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+
+    &.active {
+       background: $yellow; 
+    }
+}
