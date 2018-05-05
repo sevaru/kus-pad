@@ -5,12 +5,12 @@ import * as Tone from 'tone';
 
 const sampler = new Tone.Sampler(
     {
-        'C3': '/kick.mp3',
-        'D3': '/snare.mp3',
-        'E3': '/hh.mp3',
-        'F3': '/ohh.mp3',
-        'G3': '/ride.mp3',
-        'A3': '/cymbal.mp3',
+        'C3': './kick.mp3',
+        'D3': './snare.mp3',
+        'E3': './hh.mp3',
+        'F3': './ohh.mp3',
+        'G3': './ride.mp3',
+        'A3': './cymbal.mp3',
     },
     {
         'release': 1,
