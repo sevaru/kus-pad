@@ -2,8 +2,10 @@
   "name": "superkus",
   "scripts": {
     "start": "parcel ./index.html",
+    "start2": "parcel ./synth.html",
     "copy-samples": "ncp ./samples ./dist",
     "build": "parcel build ./index.html --out-dir ./build --public-url ./ && ncp ./samples ./build",
+    "build2": "parcel build ./synth.html --out-dir ./build --public-url ./",
     "predeploy": "rimraf docs && npm run build && ncp ./build ./docs"
   },
   "devDependencies": {
